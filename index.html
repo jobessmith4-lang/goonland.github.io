@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoonPedia — The Free Encyclopedia of Goonland</title>
+  <meta name="description" content="The free encyclopedia of Goonland — conflicts, factions, and wars from the world's most chaotic fictional nation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+  <!-- ── Site Header ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-fraktur">GoonPedia</span>
+        <span class="logo-sub">The Free Encyclopedia of Goonland</span>
+      </a>
+
+      <div class="header-search">
+        <input
+          type="text"
+          id="global-search-input"
+          placeholder="Search the chronicles…"
+          aria-label="Search articles"
+        >
+        <button id="global-search-btn" aria-label="Search">⌕</button>
+      </div>
+
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html">Index</a>
+        
+        
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main Card ── -->
+  <div class="page-wrapper">
+    <main class="main-card">
+
+      <!-- Banner -->
+      <div class="homepage-banner">
+        <h1>GoonPedia</h1>
+        <div class="banner-rule"></div>
+        <p class="banner-tagline">
+          The free encyclopedia of Goonland — tracking every faction, front, and foreign intervention since 2018.
+        </p>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="homepage-stats">
+        <span><strong id="stat-total">—</strong> &nbsp;Articles</span>
+        <span><strong id="stat-cats">—</strong> &nbsp;Eras</span>
+        <span><strong>∞</strong> &nbsp;Histories</span>
+      </div>
+
+      <!-- Content area -->
+      <div class="homepage-content">
+
+        <!-- Search results banner (hidden until search) -->
+        <div id="search-results-banner" class="search-banner" style="display:none; margin: -2rem -2.5rem 1.5rem; padding-left: 2rem;"></div>
+
+        <!-- Homepage search row -->
+        <div style="display:flex; gap:0.5rem; margin-bottom:1.5rem;">
+          <input
+            type="text"
+            id="homepage-search-input"
+            placeholder="Search by title, belligerent, era…"
+            style="
+              flex:1;
+              border:1px solid var(--border);
+              background:rgba(255,255,255,0.5);
+              font-family:var(--font-body);
+              font-size:0.95rem;
+              padding:0.5rem 0.9rem;
+              color:var(--ink);
+              outline:none;
+              border-radius:2px;
+            "
+            aria-label="Search articles"
+          >
+          <button id="homepage-search-btn" style="
+            background:var(--ink);
+            color:var(--gold-light);
+            border:none;
+            padding:0.5rem 1.2rem;
+            font-family:var(--font-body);
+            font-size:0.9rem;
+            cursor:pointer;
+            border-radius:2px;
+            letter-spacing:0.06em;
+          ">Search</button>
+        </div>
+
+        <!-- Category tabs -->
+        <div class="category-tabs" id="category-tabs" role="tablist" aria-label="Filter by era">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- War list -->
+        <div class="war-grid" id="war-list" role="list" aria-live="polite" aria-label="List of articles">
+          <!-- Populated by JS -->
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <div class="footer-rule"></div>
+      <p>
+        <strong style="color:var(--gold)">GoonPedia</strong> &mdash;
+        All factions, commanders, and events described herein are entirely fictional. Any resemblance to real goons is purely coincidental.
+        Any resemblance to historical events is coincidental.
+      </p>
+      <p style="margin-top:0.4rem; font-size:0.72rem; color:var(--ink-faint);">
+        Content available under the
+        <a href="#">GoonPedia Open Chronicles License</a>.
+        Hosted on GitHub Pages.
+      </p>
+      <div class="footer-rule"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

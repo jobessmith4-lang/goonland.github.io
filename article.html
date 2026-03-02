@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — GoonPedia</title>
+  <meta name="description" content="GoonPedia article — Goonland Civil War and the Wars in Goonland.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="article">
+
+  <!-- ── Site Header ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-fraktur">GoonPedia</span>
+        <span class="logo-sub">The Free Encyclopedia of Goonland</span>
+      </a>
+
+      <div class="header-search">
+        <input
+          type="text"
+          id="global-search-input"
+          placeholder="Search the chronicles…"
+          aria-label="Search articles"
+        >
+        <button id="global-search-btn" aria-label="Search">⌕</button>
+      </div>
+
+      <nav class="header-nav" aria-label="Site navigation">
+        <a href="index.html">Index</a>
+        
+        
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Breadcrumb ── -->
+  <div class="page-wrapper">
+    <div class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">GoonPedia</a>
+      <span class="sep">›</span>
+      <span>Loading…</span>
+    </div>
+  </div>
+
+  <!-- ── Main Card ── -->
+  <div class="page-wrapper">
+    <main class="main-card" id="article-main" aria-live="polite" aria-label="Article content">
+      <!-- Populated by JS -->
+      <div class="state-message">
+        <span class="state-icon">✦</span>
+        Loading article…
+      </div>
+    </main>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <div class="footer-rule"></div>
+      <p>
+        <strong style="color:var(--gold)">GoonPedia</strong> &mdash;
+        All factions, commanders, and events described herein are entirely fictional. Any resemblance to real goons is purely coincidental.
+        Any resemblance to historical events is coincidental.
+      </p>
+      <p style="margin-top:0.4rem; font-size:0.72rem; color:var(--ink-faint);">
+        Content available under the
+        <a href="#">GoonPedia Open Chronicles License</a>.
+        Hosted on GitHub Pages.
+      </p>
+      <div class="footer-rule"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
